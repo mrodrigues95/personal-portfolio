@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 html {
   height: 100%;
 }
@@ -38,6 +40,12 @@ body {
   }
 }
 
+.orange-letters {
+  span {
+    color: $main-font-color;
+  }
+}
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -55,20 +63,19 @@ body {
 }
 
 hr {
-  border-top: 2px solid black;
+  border-top: 2px solid $main-font-color;
   margin-top: 1rem;
   width: 20%;
 }
 
-#about {
-  p {
-    line-height: 1.5rem;
-  }
+p {
+  line-height: 1.5rem;
 }
 
 #skills {
   h4 {
     margin: 0;
+    color: $main-font-color;
   }
 
   p {
@@ -78,7 +85,7 @@ hr {
 
 #projects {
   a {
-      text-decoration: none;
+    text-decoration: none;
   }
 
   .project-card {

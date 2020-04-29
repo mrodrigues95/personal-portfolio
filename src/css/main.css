@@ -32,6 +32,10 @@ body {
   font-size: 2rem;
 }
 
+.orange-letters span {
+  color: #ed7d31;
+}
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -47,17 +51,18 @@ body {
 }
 
 hr {
-  border-top: 2px solid black;
+  border-top: 2px solid #ed7d31;
   margin-top: 1rem;
   width: 20%;
 }
 
-#about p {
+p {
   line-height: 1.5rem;
 }
 
 #skills h4 {
   margin: 0;
+  color: #ed7d31;
 }
 #skills p {
   margin: 0.3rem 0;
