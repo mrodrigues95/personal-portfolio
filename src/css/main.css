@@ -26,23 +26,23 @@ body {
 
 #hero-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 #hero-container h1 {
   font-size: 2rem;
 }
-#hero-container .social-links {
+
+.social-links {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
 }
-#hero-container .social-links a {
+.social-links a {
   text-decoration: none;
   padding: 0.5rem 0.5rem;
 }
-#hero-container .social-links a .svg-inline--fa {
+.social-links a .svg-inline--fa {
   width: 25px;
 }
 
@@ -63,6 +63,9 @@ hr {
   margin: 0.3rem 0;
 }
 
+#projects a {
+  text-decoration: none;
+}
 #projects .project-card {
   display: flex;
   flex-direction: row;
@@ -79,7 +82,7 @@ hr {
 #projects .project-card__content h5 {
   margin: 0 0.5rem 0.5rem 0.5rem;
   font-size: 0.7rem;
-  color: #9B1616;
+  color: #9b1616;
 }
 #projects .project-card__content h2 {
   margin: 0.5rem;
@@ -93,7 +96,7 @@ hr {
 #projects .project-card__content .project-card__content--links a {
   text-decoration: none;
   background: white;
-  color: #9B1616;
+  color: #9b1616;
   padding: 0.4rem;
   font-size: 0.8rem;
   border-radius: 6px;
@@ -103,8 +106,16 @@ hr {
 }
 #projects .project-card__content .project-card__content--links .project-card__content--links__link {
   margin-right: 0.4rem;
-  background: #9B1616;
+  background: #9b1616;
   color: white;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+#contact a {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,26 +31,25 @@ body {
 
 #hero-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 
   h1 {
     font-size: 2rem;
   }
+}
 
-  .social-links {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 
-    a {
-      text-decoration: none;
-      padding: 0.5rem 0.5rem;
+  a {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
 
-      .svg-inline--fa {
-        width: 25px;
-      }
+    .svg-inline--fa {
+      width: 25px;
     }
   }
 }
@@ -78,6 +77,10 @@ hr {
 }
 
 #projects {
+  a {
+      text-decoration: none;
+  }
+
   .project-card {
     display: flex;
     flex-direction: row;
@@ -96,7 +99,7 @@ hr {
     h5 {
       margin: 0 0.5rem 0.5rem 0.5rem;
       font-size: 0.7rem;
-      color: #9B1616;   
+      color: #9b1616;
     }
 
     h2 {
@@ -112,20 +115,29 @@ hr {
       a {
         text-decoration: none;
         background: white;
-        color: #9B1616;
+        color: #9b1616;
         padding: 0.4rem;
         font-size: 0.8rem;
         border-radius: 6px;
         margin-bottom: 0.2rem;
         font-weight: 600;
-        letter-spacing: .025rem;
+        letter-spacing: 0.025rem;
       }
 
       .project-card__content--links__link {
         margin-right: 0.4rem;
-        background: #9B1616;
+        background: #9b1616;
         color: white;
       }
     }
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-top: 2rem;
   }
 }
