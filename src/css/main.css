@@ -143,7 +143,6 @@ p {
   font-weight: 500;
 }
 #projects .project-card__content .project-card__content--links {
-  margin: 0.9rem 0.5rem 0 0;
   text-align: right;
 }
 #projects .project-card__content .project-card__content--links a {
@@ -180,6 +179,44 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-container {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .list-of-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .list-of-projects a {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .list-of-projects .project-card {
+    margin-right: 0.6rem;
+  }
+  .list-of-projects .project-card .project-card__content {
+    position: relative;
+    padding-bottom: 3rem;
+  }
+  .list-of-projects .project-card .project-card__content .project-card__content--links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem 0 0 0.5rem;
+    align-items: flex-end;
+    width: 100%;
+    float: right;
+    overflow: hidden;
+  }
+  .list-of-projects .last-card {
+    grid-column: span 2;
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
