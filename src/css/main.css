@@ -35,6 +35,25 @@ hr {
   width: 20%;
 }
 
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #hero-container {
   display: flex;
   flex-direction: column;
@@ -74,6 +93,18 @@ p {
 #skills p {
   margin: 0.3rem 0;
 }
+#skills .personal-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+#skills .personal-skills .personal-skill {
+  font-size: 0.85rem;
+  background: #ed7d31;
+  color: white;
+  padding: 0.4rem;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  border-radius: 4px;
+}
 
 #projects {
   display: block;
@@ -87,6 +118,7 @@ p {
   text-decoration: none;
 }
 #projects .project-card {
+  position: relative;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -94,6 +126,7 @@ p {
   border-radius: 4px;
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 2.5rem;
+  overflow: hidden;
 }
 #projects .project-card__content {
   width: 100%;
@@ -107,10 +140,10 @@ p {
 #projects .project-card__content h2 {
   margin: 0.5rem;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
 }
 #projects .project-card__content .project-card__content--links {
-  margin: 0.9rem 0.5rem 0.5rem 0;
+  margin: 0.9rem 0.5rem 0 0;
   text-align: right;
 }
 #projects .project-card__content .project-card__content--links a {
@@ -120,12 +153,11 @@ p {
   padding: 0.4rem;
   font-size: 0.8rem;
   border-radius: 6px;
-  margin-bottom: 0.2rem;
   font-weight: 600;
   letter-spacing: 0.025rem;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 #projects .project-card__content .project-card__content--links .project-card__content--links__link {
-  display: none;
   margin-right: 0.4rem;
   background: #9b1616;
   color: white;
@@ -147,7 +179,7 @@ p {
 #contact {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
