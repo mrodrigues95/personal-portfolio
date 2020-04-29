@@ -1,5 +1,4 @@
 @import '_variables.scss';
-
 html {
   height: 100%;
 }
@@ -11,12 +10,12 @@ body {
 }
 
 header {
-  display: flex;
+  display: none;
   justify-content: flex-end;
 
   .burger-button {
-      width: 25px;
-      height: 25px;
+    width: 25px;
+    height: 25px;
   }
 
   .main-nav {
@@ -35,6 +34,12 @@ header {
       }
     }
   }
+}
+
+hr {
+  border-top: 2px solid $main-font-color;
+  margin-top: 1rem;
+  width: 20%;
 }
 
 #hero-container {
@@ -59,7 +64,6 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: auto;
 
   a {
     text-decoration: none;
@@ -69,12 +73,6 @@ header {
       width: 25px;
     }
   }
-}
-
-hr {
-  border-top: 2px solid $main-font-color;
-  margin-top: 1rem;
-  width: 20%;
 }
 
 p {
@@ -93,6 +91,14 @@ p {
 }
 
 #projects {
+  display: block;
+
+  p {
+    color: white;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+  }
+
   a {
     text-decoration: none;
   }
@@ -141,10 +147,26 @@ p {
       }
 
       .project-card__content--links__link {
+        display: none;
         margin-right: 0.4rem;
         background: #9b1616;
         color: white;
       }
+    }
+  }
+
+  .project-tools {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+
+    .project-tool {
+      font-size: 0.85rem;
+      background: #9b1616;
+      color: white;
+      padding: 0.4rem;
+      margin: 0 0.3rem 0.3rem 0;
+      border-radius: 4px;
     }
   }
 }
@@ -152,8 +174,5 @@ p {
 #contact {
   display: flex;
   flex-direction: column;
-
-  a {
-    margin-top: 2rem;
-  }
+  margin: 0;
 }

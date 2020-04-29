@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  display: flex;
+  display: none;
   justify-content: flex-end;
 }
 header .burger-button {
@@ -27,6 +27,12 @@ header .main-nav .main-nav__item {
 }
 header .main-nav .main-nav__item a {
   text-decoration: none;
+}
+
+hr {
+  border-top: 2px solid #ed7d31;
+  margin-top: 1rem;
+  width: 20%;
 }
 
 #hero-container {
@@ -48,7 +54,6 @@ header .main-nav .main-nav__item a {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: auto;
 }
 .social-links a {
   text-decoration: none;
@@ -56,12 +61,6 @@ header .main-nav .main-nav__item a {
 }
 .social-links a .svg-inline--fa {
   width: 25px;
-}
-
-hr {
-  border-top: 2px solid #ed7d31;
-  margin-top: 1rem;
-  width: 20%;
 }
 
 p {
@@ -76,6 +75,14 @@ p {
   margin: 0.3rem 0;
 }
 
+#projects {
+  display: block;
+}
+#projects p {
+  color: white;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+}
 #projects a {
   text-decoration: none;
 }
@@ -118,17 +125,29 @@ p {
   letter-spacing: 0.025rem;
 }
 #projects .project-card__content .project-card__content--links .project-card__content--links__link {
+  display: none;
   margin-right: 0.4rem;
   background: #9b1616;
   color: white;
+}
+#projects .project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+#projects .project-tools .project-tool {
+  font-size: 0.85rem;
+  background: #9b1616;
+  color: white;
+  padding: 0.4rem;
+  margin: 0 0.3rem 0.3rem 0;
+  border-radius: 4px;
 }
 
 #contact {
   display: flex;
   flex-direction: column;
-}
-#contact a {
-  margin-top: 2rem;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
