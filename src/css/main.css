@@ -27,7 +27,7 @@ body {
 #hero-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 #hero-container h1 {
   font-size: 2rem;
@@ -43,9 +43,68 @@ body {
   padding: 0.5rem 0.5rem;
 }
 #hero-container .social-links a .svg-inline--fa {
-  display: inline-block;
-  font-size: inherit;
   width: 25px;
+}
+
+hr {
+  border-top: 2px solid black;
+  margin-top: 1rem;
+  width: 20%;
+}
+
+#about p {
+  line-height: 1.5rem;
+}
+
+#skills h4 {
+  margin: 0;
+}
+#skills p {
+  margin: 0.3rem 0;
+}
+
+#projects .project-card {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: #ef4343;
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+}
+#projects .project-card__content {
+  width: 100%;
+  margin: 0.8rem 0.6rem;
+}
+#projects .project-card__content h5 {
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  font-size: 0.7rem;
+  color: #9B1616;
+}
+#projects .project-card__content h2 {
+  margin: 0.5rem;
+  color: white;
+  font-weight: 400;
+}
+#projects .project-card__content .project-card__content--links {
+  margin: 0.9rem 0.5rem 0.5rem 0;
+  text-align: right;
+}
+#projects .project-card__content .project-card__content--links a {
+  text-decoration: none;
+  background: white;
+  color: #9B1616;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+}
+#projects .project-card__content .project-card__content--links .project-card__content--links__link {
+  margin-right: 0.4rem;
+  background: #9B1616;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
