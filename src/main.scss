@@ -135,6 +135,11 @@ p {
     text-decoration: none;
   }
 
+  a:hover {
+    transform: translateY(-1px);
+    text-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+
   .project-card {
     position: relative;
     display: flex;
@@ -209,6 +214,11 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+
+  h2 {
+    align-self: center;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -242,7 +252,6 @@ p {
           align-items: flex-end;
           width: 100%;
           float: right;
-          overflow: hidden;
         }
       }
     }
