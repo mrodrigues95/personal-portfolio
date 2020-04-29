@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import '_variables.scss';
 
 html {
   height: 100%;
@@ -7,11 +7,17 @@ html {
 body {
   font-family: 'Merriweather', serif;
   margin: 1.5rem 1rem;
+  background: #fffcfb;
 }
 
-.main-header {
+header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+
+  .burger-button {
+      width: 25px;
+      height: 25px;
+  }
 
   .main-nav {
     .main-nav__items {
@@ -34,15 +40,18 @@ body {
 #hero-container {
   display: flex;
   flex-direction: column;
+  text-align: center;
 
   h1 {
     font-size: 2rem;
+    margin-top: 1rem;
   }
 }
 
 .orange-letters {
   span {
     color: $main-font-color;
+    opacity: 0.8;
   }
 }
 
@@ -92,7 +101,7 @@ p {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    background-color: #ef4343;
+    background-color: #ff4040;
     border-radius: 4px;
     box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05),
       0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
