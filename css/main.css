@@ -217,9 +217,7 @@ p {
     bottom: 0;
     right: 0;
     margin: 1rem 0 0 0.5rem;
-    align-items: flex-end;
     width: 100%;
-    float: right;
   }
   .list-of-projects .last-card {
     grid-column: span 2;
