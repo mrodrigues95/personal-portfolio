@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  margin: 1.5rem 1rem;
+  background: #fffcfb;
+}
+
+.orange-letters span {
+  color: #ed7d31;
+  opacity: 0.8;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+header p {
+  margin: 0;
+}
+header .project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+header .project-skills .project-skill {
+  font-size: 0.85rem;
+  background: #ed7d31;
+  color: white;
+  padding: 0.4rem;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  border-radius: 4px;
+}
+
+main p {
+  margin-top: 2rem;
+}
+main .image-slideshow {
+  display: flex;
+  background: black;
+  overflow: hidden;
+}
+main li {
+  margin-bottom: 0.2rem;
+}
+main .navigation-links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main .navigation-links a {
+  color: #ed7d31;
+}
+main .navigation-links a:last-child {
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=ratemylearning.css.map */
