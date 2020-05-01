@@ -25,8 +25,42 @@ header {
   flex-direction: column;
   text-align: left;
 
-  h2 {
+  .main-nav {
+    .main-nav__items {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+
+    .main-nav__item {
+      display: inline-block;
+      margin: 0 1rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      display: none;
+    }
+  }
+
+  h1 {
     margin-top: 1rem;
+    font-size: 24px;
+  }
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
   }
 
   p {
@@ -49,11 +83,25 @@ header {
   }
 }
 
-main {
-  p {
-    margin-top: 2rem;
-  }
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
+main {
   li {
     margin-bottom: 0.2rem;
   }
@@ -62,9 +110,16 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 4rem;
 
     a {
       color: $main-font-color;
+    }
+
+    a:hover {
+      transform: translateY(-1px);
+      text-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+        0 3px 6px rgba(0, 0, 0, 0.08);
     }
 
     a:last-child {
@@ -94,6 +149,37 @@ hr {
   }
 }
 
+@media only screen and (min-width: 470px) {
+  header {
+    .main-nav {
+      display: none;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    div:first-of-type {
+      a {
+        display: block;
+        margin-left: auto;
+        background: #ff4040;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
-  
+  .features-tools {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+
+    div {
+      justify-self: center;
+    }
+  }
 }
