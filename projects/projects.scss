@@ -1,0 +1,99 @@
+@import '../variables.scss';
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  margin: 1.5rem 1rem;
+  background: #fffcfb;
+}
+
+.project-container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.orange-letters span {
+  color: $main-font-color;
+  opacity: 0.8;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  h2 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+
+    .project-skill {
+      font-size: 0.85rem;
+      background: $main-font-color;
+      color: white;
+      padding: 0.4rem;
+      margin: 0.3rem 0.3rem 0.3rem 0;
+      border-radius: 4px;
+    }
+  }
+}
+
+main {
+  p {
+    margin-top: 2rem;
+  }
+
+  li {
+    margin-bottom: 0.2rem;
+  }
+
+  .navigation-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    a {
+      color: $main-font-color;
+    }
+
+    a:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+hr {
+  border-top: 2px solid $main-font-color;
+  margin-top: 1rem;
+  width: 20%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+
+    .svg-inline--fa {
+      width: 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+}
