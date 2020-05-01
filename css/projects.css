@@ -89,6 +89,9 @@ header .project-skills .project-skill {
   transform: scale(1.1);
 }
 
+main ul {
+  padding-left: 2.4rem;
+}
 main li {
   margin-bottom: 0.2rem;
 }

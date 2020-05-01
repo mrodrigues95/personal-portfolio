@@ -166,6 +166,10 @@ p {
   background: #9b1616;
   color: white;
 }
+#projects .project-card__content .project-card__content--links .project-card__content--links__link:hover,
+#projects .project-card__content .project-card__content--links .project-card__content--links__link:active {
+  background: #b82525;
+}
 #projects .project-tools {
   display: flex;
   flex-wrap: wrap;

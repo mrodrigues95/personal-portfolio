@@ -191,6 +191,11 @@ p {
         background: #9b1616;
         color: white;
       }
+
+      .project-card__content--links__link:hover,
+      .project-card__content--links__link:active {
+        background: #b82525;
+      }
     }
   }
 
