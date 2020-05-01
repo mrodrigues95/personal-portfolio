@@ -31,7 +31,7 @@ header .main-nav .main-nav__item a {
 }
 
 hr {
-  border-top: 2px solid #ed7d31;
+  border: 2px solid #ed7d31;
   margin-top: 1rem;
   width: 20%;
 }
