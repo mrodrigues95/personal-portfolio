@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const Error = ({ error }: { error: Error }) => {
   useEffect(() => {

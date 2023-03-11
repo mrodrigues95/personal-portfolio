@@ -1,9 +1,9 @@
-import { TextHighlight, Link } from '~/components';
+import { TextHighlight, Link } from "~/components";
 
 const Home = () => (
   <section className="prose p-4 lg:p-0">
     <h1>
-      <TextHighlight>:</TextHighlight> Hey, I&apos;m{' '}
+      <TextHighlight>:</TextHighlight> Hey, I&apos;m{" "}
       <TextHighlight>M</TextHighlight>arcus
     </h1>
     <p>I like building cool things.</p>
