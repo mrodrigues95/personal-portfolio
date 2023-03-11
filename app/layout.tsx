@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import { Metadata } from "next";
 import { Merriweather_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import clsx from "clsx";
 import "./globals.css";
 
 const merriweather = Merriweather_Sans({
@@ -45,13 +44,8 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
-  <html lang="en">
-    <body
-      className={clsx(
-        "mx-auto my-32 max-w-2xl bg-orange-50/25 antialiased",
-        merriweather.className
-      )}
-    >
+  <html lang="en" className={merriweather.className}>
+    <body className="mx-auto my-32 max-w-2xl bg-orange-50/25 antialiased">
       <main>{children}</main>
       <Analytics />
     </body>
