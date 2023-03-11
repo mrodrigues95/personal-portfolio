@@ -51,14 +51,14 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  // headers() {
-  //   return [
-  //     {
-  //       source: "/(.*)",
-  //       headers: securityHeaders,
-  //     },
-  //   ];
-  // },
+  headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: securityHeaders,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
