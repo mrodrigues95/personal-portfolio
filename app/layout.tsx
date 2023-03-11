@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     description: "Developer.",
     url: "https://mrodrigues.me",
     siteName: "Marcus Rodrigues",
-    images: [
-      {
-        url: "https://mrodrigues.me/favicon.ico",
-        width: 1920,
-        height: 1080,
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "https://mrodrigues.me/favicon.ico",
+    //     width: 1920,
+    //     height: 1080,
+    //   },
+    // ],
     locale: "en-US",
     type: "website",
   },
